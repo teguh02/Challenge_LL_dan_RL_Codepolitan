@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/doraemonImgText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <ImageView
+            android:id="@+id/doraemonImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/doraemon"
+            android:scaleType="centerCrop"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doraemon"
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/deskripsi"
+        android:padding="18dp"
+        android:layout_below="@id/doraemonImgText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu metus in eros placerat condimentum eget sed quam. Fusce aliquam libero semper mauris ultricies porta. Duis purus metus, placerat at nulla eget, lacinia consectetur augue. Sed in odio neque. Aliquam ut tincidunt purus. Ut et consequat elit, id posuere elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus eu placerat ex. Suspendisse porttitor nulla at magna lobortis, sit amet euismod enim ornare. Sed dignissim ex volutpat ornare blandit. Etiam non suscipit felis. Curabitur convallis purus sed condimentum porta. Praesent tristique mauris nisi, ut congue est ornare vitae."
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/castCrew"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:layout_marginBottom="18dp"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_below="@id/deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cast &amp; Crew"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/castCrew"
+        android:orientation="horizontal"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        >
+        <TextView
+            android:id="@+id/direktor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Director"
+            android:textStyle="bold"
+            android:layout_weight="0.3"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dave Wilison"
+            android:layout_weight="1"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:orientation="horizontal"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        android:layout_marginTop="18dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cast"
+            android:textStyle="bold"
+            android:layout_weight="0.6"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vin Diesel, Toby Kebbel"
+            android:layout_weight="1"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent"
+        android:layout_margin="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        >
+
+    </Button>
+
+</RelativeLayout>
